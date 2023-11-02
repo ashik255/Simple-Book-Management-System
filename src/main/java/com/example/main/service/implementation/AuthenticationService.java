@@ -7,9 +7,8 @@ import com.example.main.utlis.JwtService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
-import org.springframework.security.core.userdetails.UserDetails;
+
 
 @Service
 @RequiredArgsConstructor

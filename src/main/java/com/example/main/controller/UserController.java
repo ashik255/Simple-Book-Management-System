@@ -7,7 +7,6 @@ import com.example.main.service.UserService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -24,14 +23,12 @@ public class UserController {
     }
     @GetMapping("/profile")
     public ResponseEntity<UserEntity> getAuthenticatedUserProfile(@RequestBody AuthenticationRequest authenticationRequest) {
-        // Get the authenticated user's profile (excluding the password)
         UserEntity authenticatedUser = userService.getAuthenticatedUser();
         return ResponseEntity.ok(authenticatedUser);
     }
 
     @PutMapping("/profile/{id}")
     public ResponseEntity<Object> updateAuthenticatedUserProfile(@PathVariable ("id") Long id, @RequestBody UserEntity updatedUser) {
-        // Update the profile of the authenticated user
         ResponseEntity<Object> updatedUserProfile = userService.updateAuthenticatedUser(id,updatedUser);
         return ResponseEntity.ok(updatedUserProfile);
     }

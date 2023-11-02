@@ -39,9 +39,7 @@ public class BookServiceImpl implements BookService {
     public List<BookEntity> getAllBooks() {
         List<BookEntity> bookModelList = bookRepository.findAll();
         return bookModelList;
-//        return bookRepository.findAll();
     }
-
 
     @Override
     public void delete(Long bookId) {

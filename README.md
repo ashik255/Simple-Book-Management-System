@@ -58,7 +58,12 @@ The Simple Book Management System is a RESTful web service built with Spring Boo
 
 - Register a new user, authenticate, and access the book management and user profile endpoints as described in the API Endpoints section below.
 
-  <hr>
+ 
+
+## API Endpoints
+
+- User Management:
+-  <hr>
 
 - /user/register
 
@@ -76,13 +81,30 @@ The Simple Book Management System is a RESTful web service built with Spring Boo
     "email": "ashik@gmail.com",
     "dateRegistered": "2023-11-03T00:00:00.000+00:00",
     "role": "USER" // or "ADMIN" for an admin user
+ 
 } `
+br>
 
-## API Endpoints
+- /user/login
 
-- User Management:
-  - `POST /api/users/register`: Register a new user.
-  - `POST /api/users/login`: Authenticate a user and return a JWT token.
+   - Method : POST  
+   - Full Path 
+    
+     `http://localhost:8080/auth-server/login`
+
+  - Input 
+    ` {
+    "email": "ashik@gmail.com",
+    "password": "123456"
+    } `
+
+  - Output For Successful Login
+  
+    `{
+    "data": {
+        "token": "eyJhbGciOiJIUzI1NiJ9.eyJhdXRob3JpdGllcyI6WyJBRE1JTiIsIlVTRVIiXSwic3ViIjoicmFoYXRpYm5ob3NzYWluQGdtYWlsLmNvbSIsImlhdCI6MTY4NjE5NDYyOSwiZXhwIjoxNjg2MTk2MDY5fQ.XS-nJvncEOwbkZAlgNGWO0-BhZFEYZ-6-duS5AZXnkE"
+    }
+}`
   - `GET /api/users/profile`: Retrieve the authenticated user's profile.
   - `PUT /api/users/profile`: Update the profile of the authenticated user.
 

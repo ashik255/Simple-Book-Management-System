@@ -12,7 +12,6 @@
 - [Optional Features](#optional-features)
 - [Project Structure](#project-structure)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Overview
 
@@ -102,11 +101,15 @@ The Simple Book Management System is a RESTful web service built with Spring Boo
         "token": "eyJhbGciOiJIUzI1NiJ9.eyJhdXRob3JpdGllcyI6WyJBRE1JTiIsIlVTRVIiXSwic3ViIjoicmFoYXRpYm5ob3NzYWluQGdtYWlsLmNvbSIsImlhdCI6MTY4NjE5NDYyOSwiZXhwIjoxNjg2MTk2MDY5fQ.XS-nJvncEOwbkZAlgNGWO0-BhZFEYZ-6-duS5AZXnkE"
     }
 }`
-
+<hr>
 <br>
+
   - `GET /api/users/profile`: Retrieve the authenticated user's profile.
     <br>
   - `PUT /api/users/profile`: Update the profile of the authenticated user.
+
+<hr>
+<br>
 
 - Book Management:
   - Add, update, and delete books (authentication required).
@@ -132,11 +135,5 @@ The Simple Book Management System is a RESTful web service built with Spring Boo
 ## Contributing
 
 - Describe how others can contribute to your project.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE.md).
-
----
 
 Feel free to tailor this README to your project's specific details and structure. Additionally, include any information that is relevant to your project, such as the technology stack, project dependencies, or specific usage instructions.

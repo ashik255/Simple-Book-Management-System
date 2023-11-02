@@ -69,7 +69,7 @@ The Simple Book Management System is a RESTful web service built with Spring Boo
     
     - Input 
   
-    ` {
+    `{
     "username": "Ariful556",
     "password": "123456",
     "fullName": "Md Ariful Islam",
@@ -89,10 +89,10 @@ The Simple Book Management System is a RESTful web service built with Spring Boo
      `http://localhost:8080/auth-server/login`
 
   - Input 
-    ` {
+    `{
     "email": "ashik@gmail.com",
     "password": "123456"
-    } `
+    }`
 
   - Output For Successful Login
   

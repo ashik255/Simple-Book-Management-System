@@ -76,8 +76,7 @@ The Simple Book Management System is a RESTful web service built with Spring Boo
     "email": "ashik@gmail.com",
     "dateRegistered": "2023-11-03T00:00:00.000+00:00",
     "role": "USER" // or "ADMIN" for an admin user
- 
-} `
+}`
 
 <br>
 

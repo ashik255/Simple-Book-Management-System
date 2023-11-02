@@ -61,16 +61,15 @@ The Simple Book Management System is a RESTful web service built with Spring Boo
  
 ## API Endpoints
 
-- User Management:
 -  <hr>
 
 - /user/register
 
-   - Method: POST  
-   - Full Path 
+ - Method: POST  
+  - Full Path 
     
      `http://localhost:8084/users/register`
-
+    
   - Input 
   
     ` {
@@ -82,11 +81,12 @@ The Simple Book Management System is a RESTful web service built with Spring Boo
     "role": "USER" // or "ADMIN" for an admin user
  
 } `
+
 <br>
 
 - /user/login
 
-   - Method : POST  
+   - Method: POST  
    - Full Path 
     
      `http://localhost:8080/auth-server/login`
@@ -104,6 +104,7 @@ The Simple Book Management System is a RESTful web service built with Spring Boo
         "token": "eyJhbGciOiJIUzI1NiJ9.eyJhdXRob3JpdGllcyI6WyJBRE1JTiIsIlVTRVIiXSwic3ViIjoicmFoYXRpYm5ob3NzYWluQGdtYWlsLmNvbSIsImlhdCI6MTY4NjE5NDYyOSwiZXhwIjoxNjg2MTk2MDY5fQ.XS-nJvncEOwbkZAlgNGWO0-BhZFEYZ-6-duS5AZXnkE"
     }
 }`
+
 <br>
   - `GET /api/users/profile`: Retrieve the authenticated user's profile.
     <br>

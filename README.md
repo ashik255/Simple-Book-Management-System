@@ -46,9 +46,9 @@ The Simple Book Management System is a RESTful web service built with Spring Boo
 
 ## Configuration
 
-- Configure your database connection in `application.properties` or `application.yml`.
+- Configure your database connection in `application.properties`.
 
-- Update security configurations, such as JWT secret and token expiration, in `application.properties` or `application.yml`.
+- Update security configurations, such as JWT secret and token expiration, in `application.properties`.
 
 ## Usage
 
@@ -59,7 +59,6 @@ The Simple Book Management System is a RESTful web service built with Spring Boo
 - Register a new user, authenticate, and access the book management and user profile endpoints as described in the API Endpoints section below.
 
  
-
 ## API Endpoints
 
 - User Management:
@@ -83,7 +82,7 @@ The Simple Book Management System is a RESTful web service built with Spring Boo
     "role": "USER" // or "ADMIN" for an admin user
  
 } `
-br>
+<br>
 
 - /user/login
 
@@ -105,7 +104,9 @@ br>
         "token": "eyJhbGciOiJIUzI1NiJ9.eyJhdXRob3JpdGllcyI6WyJBRE1JTiIsIlVTRVIiXSwic3ViIjoicmFoYXRpYm5ob3NzYWluQGdtYWlsLmNvbSIsImlhdCI6MTY4NjE5NDYyOSwiZXhwIjoxNjg2MTk2MDY5fQ.XS-nJvncEOwbkZAlgNGWO0-BhZFEYZ-6-duS5AZXnkE"
     }
 }`
+<br>
   - `GET /api/users/profile`: Retrieve the authenticated user's profile.
+    <br>
   - `PUT /api/users/profile`: Update the profile of the authenticated user.
 
 - Book Management:

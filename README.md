@@ -54,9 +54,29 @@ The Simple Book Management System is a RESTful web service built with Spring Boo
 
 - Access the API using your favourite REST client (e.g., Postman):
 
-  Base URL: `http://localhost:8080/api`
+  Base URL: `http://localhost:8084/api`
 
 - Register a new user, authenticate, and access the book management and user profile endpoints as described in the API Endpoints section below.
+
+  <hr>
+
+- /user/register
+
+   - Method: POST  
+   - Full Path 
+    
+     `http://localhost:8084/users/register`
+
+  - Input 
+  
+    ` {
+    "username": "Ariful556",
+    "password": "123456",
+    "fullName": "Md Ariful Islam",
+    "email": "ashik@gmail.com",
+    "dateRegistered": "2023-11-03T00:00:00.000+00:00",
+    "role": "USER" // or "ADMIN" for an admin user
+} `
 
 ## API Endpoints
 
